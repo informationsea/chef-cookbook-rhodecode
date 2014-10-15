@@ -15,7 +15,7 @@ user node["rhodecode"]["user"] do
   action :create
   home "/var/rhodecode"
   system true
-  shell "/sbin/nologin"
+  shell "/bin/bash"
 end
 
 %w{/var/rhodecode /var/rhodecode/rhodecode}.each do |dir|
